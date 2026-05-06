@@ -1,0 +1,60 @@
+<!-- POLARIS REFERRALS PAGE - STANDALONE -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: { brand: { navy: '#1a2a44', teal: '#2da0a0', gold: '#d4af37', cream: '#fdfcf8', slate: '#64748b' } },
+                fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Outfit', 'sans-serif'] }
+            }
+        }
+    }
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<div class="bg-brand-cream font-sans text-brand-navy">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-brand-teal/10">
+        <nav class="mx-auto max-w-7xl px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3">
+                <div class="bg-brand-navy p-2 rounded-lg text-white"><i data-lucide="shield-check" class="h-6 w-6"></i></div>
+                <span class="font-display font-bold text-2xl tracking-tighter text-brand-navy uppercase italic">Polaris <span class="text-brand-teal">Wellbeing</span> Visits</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section class="bg-brand-navy pt-32 pb-24 text-white">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <h1 class="text-6xl lg:text-8xl font-display font-bold mb-8 italic">Referrals</h1>
+                <p class="text-xl text-brand-gold font-bold uppercase tracking-[0.3em]">Health & Social Care Partnerships</p>
+            </div>
+        </section>
+
+        <section class="py-24 bg-white">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+                    <div>
+                        <h2 class="text-4xl font-display font-bold text-brand-navy mb-8">Professional Referrals</h2>
+                         <p class="text-lg text-brand-navy/70 mb-8">We welcome referrals from families, GP practices, and social prescribers.</p>
+                         <ul class="grid grid-cols-2 gap-4 font-bold text-brand-navy">
+                             <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-teal"></i> Families</li>
+                             <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-teal"></i> GPs & Health</li>
+                             <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-teal"></i> Social Care</li>
+                             <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-teal"></i> Charities</li>
+                         </ul>
+                    </div>
+                    <div class="bg-brand-cream/50 p-12 rounded-[4rem] border border-brand-cream shadow-xl">
+                        <h3 class="text-2xl font-bold text-brand-navy mb-4">Submit a Referral</h3>
+                        <p class="text-slate-500 italic">Please use a WordPress form plugin (WPForms/Contact Form 7) to collect referral details safely.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-navy text-white py-24 text-center text-slate-500 font-bold uppercase tracking-widest text-xs">
+        &copy; 2026 POLARIS WELLBEING VISITS LTD.
+    </footer>
+</div>
+<script>document.addEventListener('DOMContentLoaded', () => lucide.createIcons());</script>
