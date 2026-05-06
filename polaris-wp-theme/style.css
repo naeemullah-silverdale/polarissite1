@@ -1,0 +1,12 @@
+/*
+Theme Name: Polaris Wellbeing Visits
+Theme URI: https://www.polariswellbeingvisits.co.uk
+Author: AI Coding Agent
+Description: A professional, custom WordPress theme for Polaris Wellbeing Visits Ltd, converted from a high-fidelity React design.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: polaris-theme
+*/
+
+/* No additional CSS needed as we use Tailwind via CDN for ease of deployment. */
