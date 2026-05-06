@@ -1,0 +1,42 @@
+<!-- SAFEGUARDING PAGE - XAMPP READY -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: { brand: { navy: '#1a2a44', teal: '#2da0a0', gold: '#d4af37', cream: '#fdfcf8', slate: '#64748b' } },
+                fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Outfit', 'sans-serif'] }
+            }
+        }
+    }
+</script>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<div class="bg-brand-cream font-sans text-brand-navy min-h-screen">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-brand-teal/10">
+        <nav class="mx-auto max-w-7xl px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="bg-brand-navy p-2 rounded-lg text-white"><i data-lucide="shield-check" class="h-6 w-6"></i></div>
+                <span class="font-display font-bold text-2xl tracking-tighter text-brand-navy uppercase italic">Polaris <span class="text-brand-teal">Wellbeing</span> Visits</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section class="bg-brand-navy pt-32 pb-24 text-white">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <h1 class="text-5xl font-display font-bold mb-8">Safeguarding</h1>
+                <div class="bg-white/10 p-12 rounded-[3rem] border border-white/10 mb-12">
+                    <ul class="space-y-6 text-xl font-bold italic">
+                        <li class="flex items-center gap-4"><i data-lucide="check-circle" class="text-brand-teal"></i> All practitioners undergo Enhanced DBS checks.</li>
+                        <li class="flex items-center gap-4"><i data-lucide="check-circle" class="text-brand-teal"></i> Staff receive ongoing safeguarding awareness training.</li>
+                    </ul>
+                </div>
+                <div class="bg-red-500/20 p-8 rounded-2xl border border-red-500/50 text-red-100 italic">
+                    Note: Polaris Wellbeing Visits Ltd is not an emergency service. In cases of immediate danger, contact 999.
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<script>document.addEventListener('DOMContentLoaded', () => lucide.createIcons());</script>

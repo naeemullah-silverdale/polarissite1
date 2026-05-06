@@ -1,0 +1,54 @@
+<!-- ABOUT PAGE - XAMPP READY -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: { brand: { navy: '#1a2a44', teal: '#2da0a0', gold: '#d4af37', cream: '#fdfcf8', slate: '#64748b' } },
+                fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Outfit', 'sans-serif'] }
+            }
+        }
+    }
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<div class="bg-brand-cream font-sans text-brand-navy min-h-screen">
+    <!-- Nav (Same as index) -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-brand-teal/10">
+        <nav class="mx-auto max-w-7xl px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="bg-brand-navy p-2 rounded-lg text-white"><i data-lucide="shield-check" class="h-6 w-6"></i></div>
+                <span class="font-display font-bold text-2xl tracking-tighter text-brand-navy uppercase italic">Polaris <span class="text-brand-teal">Wellbeing</span> Visits</span>
+            </a>
+            <div class="hidden lg:flex items-center gap-8 font-bold text-sm uppercase tracking-widest">
+                <a href="index.html" class="text-brand-navy hover:text-brand-teal">Home</a>
+                <a href="about.html" class="text-brand-teal">About Us</a>
+                <a href="services.html" class="text-brand-navy hover:text-brand-teal">Services</a>
+                <a href="pricing.html" class="text-brand-navy hover:text-brand-teal">Pricing</a>
+                <a href="contact.html" class="bg-brand-navy text-white px-6 py-2.5 rounded-full hover:bg-brand-teal transition-all shadow-lg">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section class="bg-brand-navy pt-32 pb-24 text-white">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <h1 class="text-6xl lg:text-8xl font-display font-bold mb-8 italic">About Us</h1>
+                <p class="text-xl text-brand-gold font-bold uppercase tracking-[0.3em]">Our Identity & Heritage</p>
+            </div>
+        </section>
+
+        <section class="py-24 bg-white">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+                    <div class="space-y-8 text-lg text-brand-navy/80 leading-relaxed">
+                        <p class="text-2xl font-bold text-brand-navy leading-tight italic">Polaris has guided travellers for centuries, offering direction and reassurance in uncertain times.</p>
+                        <p>We chose the name Polaris because that reflects what we aim to be for the people we support – a steady, reliable presence helping individuals navigate daily life with confidence while remaining independent.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<script>document.addEventListener('DOMContentLoaded', () => lucide.createIcons());</script>

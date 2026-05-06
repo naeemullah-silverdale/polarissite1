@@ -1,0 +1,39 @@
+<!-- CONTACT PAGE - XAMPP READY -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: { brand: { navy: '#1a2a44', teal: '#2da0a0', gold: '#d4af37', cream: '#fdfcf8', slate: '#64748b' } },
+                fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Outfit', 'sans-serif'] }
+            }
+        }
+    }
+</script>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<div class="bg-brand-cream font-sans text-brand-navy min-h-screen">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-brand-teal/10">
+        <nav class="mx-auto max-w-7xl px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="bg-brand-navy p-2 rounded-lg text-white"><i data-lucide="shield-check" class="h-6 w-6"></i></div>
+                <span class="font-display font-bold text-2xl tracking-tighter text-brand-navy uppercase italic">Polaris <span class="text-brand-teal">Wellbeing</span> Visits</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section class="bg-brand-navy pt-32 pb-24 text-white">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+                <h1 class="text-6xl font-display font-bold mb-8 italic">Contact Us</h1>
+                <div class="p-12 bg-white/10 rounded-[3rem] border border-white/10 max-w-2xl mx-auto backdrop-blur-xl">
+                    <p class="text-brand-gold text-sm font-bold uppercase tracking-[0.3em] mb-4">Call Us Today</p>
+                    <p class="text-4xl font-bold mb-8">07592265774</p>
+                    <p class="text-brand-teal text-sm font-bold uppercase tracking-[0.3em] mb-4">Email Us</p>
+                    <p class="text-xl font-bold">polariswellbeingvisitsltd@gmail.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<script>document.addEventListener('DOMContentLoaded', () => lucide.createIcons());</script>

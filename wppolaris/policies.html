@@ -1,0 +1,39 @@
+<!-- POLICIES PAGE - XAMPP READY -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: { brand: { navy: '#1a2a44', teal: '#2da0a0', gold: '#d4af37', cream: '#fdfcf8', slate: '#64748b' } },
+                fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Outfit', 'sans-serif'] }
+            }
+        }
+    }
+</script>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<div class="bg-brand-cream font-sans text-brand-navy min-h-screen">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-brand-teal/10">
+        <nav class="mx-auto max-w-7xl px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="bg-brand-navy p-2 rounded-lg text-white"><i data-lucide="shield-check" class="h-6 w-6"></i></div>
+                <span class="font-display font-bold text-2xl tracking-tighter text-brand-navy uppercase italic">Polaris <span class="text-brand-teal">Wellbeing</span> Visits</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section class="bg-brand-navy pt-32 pb-24 text-white">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <h1 class="text-6xl font-display font-bold mb-12">Policies</h1>
+                <div class="space-y-12">
+                    <div class="p-10 bg-white/5 border border-white/10 rounded-[3rem]">
+                        <h2 class="text-2xl font-bold text-brand-gold mb-6 uppercase tracking-widest">1. Safeguarding Policy</h2>
+                        <p class="text-slate-300 font-bold italic italic">Polaris Wellbeing Visits Ltd is committed to the safety of every individual. All practitioners undergo Enhanced DBS checks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<script>document.addEventListener('DOMContentLoaded', () => lucide.createIcons());</script>
