@@ -1,0 +1,23 @@
+POLARIS WELLBEING - FULL WEBSITE PACKAGE
+==========================================
+
+HOW TO VIEW INSTANTLY (XAMPP):
+------------------------------
+1. Place this 'polarisfullwebsite' folder into your 'C:\xampp\htdocs\' directory.
+2. Open your browser and type: localhost/polarisfullwebsite/index.html
+3. You will see the full website with all content immediately.
+
+HOW TO USE IN WORDPRESS:
+------------------------
+1. Place this 'polarisfullwebsite' folder into 'wp-content/themes/'.
+2. Go to your WordPress Dashboard > Appearance > Themes.
+3. Activate the 'Polaris Wellbeing' theme.
+4. Create your pages (About, Services, Pricing, etc.).
+5. IMPORTANT: The content is HARDCODED in the files (page-about.php, etc.). This means you don't need to type anything in the WordPress editor. Just creating the page with the correct name/slug will make the content appear!
+
+FILES OVERVIEW:
+---------------
+- index.html, about.html, etc.: Static versions for instant viewing.
+- front-page.php: The WordPress home page.
+- page-about.php, page-services.php, etc.: The WordPress pages with full content included.
+- functions.php: Loads Tailwind CSS and Icons automatically.

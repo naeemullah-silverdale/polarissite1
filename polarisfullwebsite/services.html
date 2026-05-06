@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Polaris Wellbeing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#1A2E35',
+                            teal: '#2D7F87',
+                            gold: '#C5A059',
+                            cream: '#F9F7F2',
+                            slate: '#4A5568',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-cream/20 font-sans">
+    <nav class="fixed top-0 left-0 right-0 z-[100] bg-white/80 backdrop-blur-md border-b border-brand-slate/5">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 h-24 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="h-10 w-10 bg-brand-navy rounded-xl flex items-center justify-center">
+                    <i data-lucide="compass" class="text-brand-gold h-6 w-6"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-display font-bold text-brand-navy leading-none tracking-tight">POLARIS</span>
+                    <span class="text-[10px] font-bold text-brand-teal uppercase tracking-[0.2em] mt-1">Wellbeing Visits</span>
+                </div>
+            </a>
+            <div class="hidden lg:flex items-center gap-8 text-sm font-bold text-brand-navy uppercase tracking-widest">
+                <a href="index.html" class="hover:text-brand-teal">Home</a>
+                <a href="about.html" class="hover:text-brand-teal">About</a>
+                <a href="services.html" class="text-brand-teal">Services</a>
+                <a href="pricing.html" class="hover:text-brand-teal">Pricing</a>
+                <a href="contact.html" class="bg-brand-navy text-white px-6 py-3 rounded-full text-xs font-bold hover:bg-brand-teal transition-all tracking-widest">BOOK A VISIT</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-32 min-h-screen bg-brand-cream/30">
+        <section class="bg-white py-32 border-b border-brand-slate/10 relative overflow-hidden">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+                <div class="max-w-2xl">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="h-px w-12 bg-brand-gold"></div>
+                        <span class="text-brand-gold font-bold uppercase tracking-[0.3em] text-xs">Our Services</span>
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-display font-bold tracking-tight text-brand-navy leading-none">
+                        Our <span class="text-brand-teal italic">Support</span>
+                    </h1>
+                    <p class="mt-8 text-xl leading-8 text-brand-navy/70 font-medium">Polaris Wellbeing Visits Ltd provides structured companionship and reassurance visits tailored to individual needs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-brand-navy">
+                <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-brand-slate/10">
+                    <i data-lucide="heart" class="text-brand-teal h-8 w-8 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Companionship Visits</h3>
+                    <p class="text-sm text-brand-navy/60 leading-relaxed font-medium">Friendly, meaningful visits that reduce loneliness, promote engagement and support emotional wellbeing.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-brand-slate/10">
+                    <i data-lucide="bell" class="text-brand-gold h-8 w-8 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Wellbeing Check-ins</h3>
+                    <p class="text-sm text-brand-navy/60 leading-relaxed font-medium">Short visits to ensure safety, routine, hydration, nutrition reminders and peace of mind.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-brand-slate/10">
+                    <i data-lucide="map-pin" class="text-brand-teal h-8 w-8 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Community Access</h3>
+                    <p class="text-sm text-brand-navy/60 leading-relaxed font-medium">Support accessing local social activities, walks and events – helping individuals remain connected.</p>
+                </div>
+                <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-brand-slate/10">
+                    <i data-lucide="shopping-bag" class="text-brand-gold h-8 w-8 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Shopping Support</h3>
+                    <p class="text-sm text-brand-navy/60 leading-relaxed font-medium">Support with weekly shopping, errands and other everyday tasks to maintain independence.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

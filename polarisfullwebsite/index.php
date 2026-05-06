@@ -1,18 +1,16 @@
 <?php
 /**
- * The main template file
+ * Fallback template
  */
 get_header(); ?>
-
-<div class="pt-32 pb-24 mx-auto max-w-7xl px-6 lg:px-8">
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <article class="prose prose-lg mx-auto bg-white p-12 rounded-[3rem] shadow-sm">
-            <h1 class="text-4xl font-display font-bold text-brand-navy mb-8"><?php the_title(); ?></h1>
-            <div class="text-brand-navy/80 leading-relaxed font-medium">
+<div class="pt-48 pb-24 mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="bg-white p-12 rounded-[3rem] shadow-sm text-center">
+        <h1 class="text-3xl font-display font-bold text-brand-navy mb-4"><?php the_title(); ?></h1>
+        <div class="prose prose-lg mx-auto text-brand-navy/70">
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <?php the_content(); ?>
-            </div>
-        </article>
-    <?php endwhile; endif; ?>
+            <?php endwhile; endif; ?>
+        </div>
+    </div>
 </div>
-
 <?php get_footer(); ?>

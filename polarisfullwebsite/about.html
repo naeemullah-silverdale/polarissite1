@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Polaris Wellbeing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#1A2E35',
+                            teal: '#2D7F87',
+                            gold: '#C5A059',
+                            cream: '#F9F7F2',
+                            slate: '#4A5568',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-cream/20 font-sans">
+    <nav class="fixed top-0 left-0 right-0 z-[100] bg-white/80 backdrop-blur-md border-b border-brand-slate/5">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 h-24 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="h-10 w-10 bg-brand-navy rounded-xl flex items-center justify-center">
+                    <i data-lucide="compass" class="text-brand-gold h-6 w-6"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-display font-bold text-brand-navy leading-none tracking-tight">POLARIS</span>
+                    <span class="text-[10px] font-bold text-brand-teal uppercase tracking-[0.2em] mt-1">Wellbeing Visits</span>
+                </div>
+            </a>
+            <div class="hidden lg:flex items-center gap-8 text-sm font-bold text-brand-navy uppercase tracking-widest">
+                <a href="index.html" class="hover:text-brand-teal">Home</a>
+                <a href="about.html" class="text-brand-teal">About</a>
+                <a href="services.html" class="hover:text-brand-teal">Services</a>
+                <a href="pricing.html" class="hover:text-brand-teal">Pricing</a>
+                <a href="contact.html" class="bg-brand-navy text-white px-6 py-3 rounded-full text-xs font-bold hover:bg-brand-teal transition-all tracking-widest">BOOK A VISIT</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-24 min-h-screen bg-brand-cream/30">
+        <!-- Hero Header -->
+        <section class="bg-white py-24 sm:py-32 relative overflow-hidden">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="max-w-2xl lg:w-1/2">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="h-px w-12 bg-brand-teal"></div>
+                            <span class="text-brand-teal font-bold uppercase tracking-[0.3em] text-xs">Our Story</span>
+                        </div>
+                        <h1 class="text-5xl lg:text-7xl font-display font-bold text-brand-navy tracking-tight leading-none">
+                             About <span class="text-brand-teal italic">Us</span>
+                        </h1>
+                        <p class="mt-8 text-xl font-medium text-brand-navy leading-relaxed max-w-xl">
+                            Polaris has guided travellers for centuries, offering direction and reassurance in uncertain times.
+                        </p>
+                        <p class="mt-6 text-lg leading-8 text-brand-navy/70">
+                            We chose the name Polaris because that reflects what we aim to be for the people we support—a steady, reliable presence helping individuals navigate daily life with confidence.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <div class="rounded-[4rem] overflow-hidden shadow-2xl relative">
+                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200&h=800" class="w-full aspect-[4/3] object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Origin Story -->
+        <section class="py-24 bg-white">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1581579186913-45ac3e6efe93?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-xl w-full h-[500px] object-cover ring-1 ring-brand-slate/20" />
+                        <div class="absolute -bottom-8 -right-8 bg-brand-gold p-8 rounded-2xl shadow-2xl hidden md:block">
+                            <i data-lucide="star" class="h-12 w-12 text-white"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-6 text-lg text-brand-navy/80 leading-relaxed">
+                        <h2 class="text-3xl font-bold uppercase tracking-widest text-lg text-brand-navy">About Polaris Wellbeing Visits Ltd</h2>
+                        <p>Polaris Wellbeing Visits Ltd was founded by experienced care professionals with backgrounds in adult care, safeguarding and frontline support. Through our work in community and residential care settings, we repeatedly saw a gap: many older adults did not require regulated personal care services but would still benefit greatly from regular reassurance visits, companionship and practical support.</p>
+                        <p class="font-semibold text-brand-teal italic">Our service was created to meet that need.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership -->
+        <section class="py-24 bg-white">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="text-center mb-20 text-brand-navy">
+                    <span class="text-brand-gold font-bold uppercase tracking-[0.3em] text-xs">Leadership</span>
+                    <h2 class="mt-4 text-4xl lg:text-5xl font-display font-bold">The Team</h2>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-24">
+                  <div class="space-y-6">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" class="rounded-3xl shadow-xl w-full aspect-square object-cover" />
+                    <h3 class="text-2xl font-bold text-brand-navy">Nonye Emenike</h3>
+                    <p class="text-brand-gold font-semibold uppercase tracking-widest text-sm">Director</p>
+                    <p class="text-brand-navy/70 leading-relaxed">Experienced care professional with a strong leadership background across adult social care and safeguarding-focused support services.</p>
+                  </div>
+                  <div class="space-y-6">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800" class="rounded-3xl shadow-xl w-full aspect-square object-cover" />
+                    <h3 class="text-2xl font-bold text-brand-navy">Muskan Begum</h3>
+                    <p class="text-brand-gold font-semibold uppercase tracking-widest text-sm">Director</p>
+                    <p class="text-brand-navy/70 leading-relaxed">Experienced care professional with over eight years experience supporting vulnerable adults and young people across health and social care settings.</p>
+                  </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-brand-navy text-white py-24 px-6">
+        <div class="mx-auto max-w-7xl text-center">
+            <p class="text-brand-gold text-xs font-bold uppercase tracking-[0.3em] mb-4">Contact Us</p>
+            <h2 class="text-3xl font-display font-bold mb-8">Ready to start?</h2>
+            <p class="text-slate-400 mb-8">Call us today: 07592265774</p>
+            <a href="contact.html" class="inline-block bg-brand-gold text-white px-12 py-4 rounded-full font-bold hover:bg-white hover:text-brand-navy transition-all">GET IN TOUCH</a>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

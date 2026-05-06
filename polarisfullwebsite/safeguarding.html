@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safeguarding | Polaris Wellbeing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { brand: { navy: '#1A2E35', teal: '#2D7F87', gold: '#C5A059', cream: '#F9F7F2', slate: '#4A5568' } }, fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Outfit', 'sans-serif'] } } } }
+    </script>
+</head>
+<body class="bg-brand-cream/20 pt-32">
+    <nav class="fixed top-0 left-0 right-0 z-[100] bg-white/80 backdrop-blur-md border-b border-brand-slate/5">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 h-24 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="h-10 w-10 bg-brand-navy rounded-xl flex items-center justify-center"><i data-lucide="compass" class="text-brand-gold h-6 w-6"></i></div>
+                <div class="flex flex-col"><span class="text-xl font-display font-bold text-brand-navy leading-none tracking-tight">POLARIS</span><span class="text-[10px] font-bold text-brand-teal uppercase tracking-[0.2em] mt-1">Wellbeing Visits</span></div>
+            </a>
+            <div class="hidden lg:flex items-center gap-8 text-sm font-bold text-brand-navy uppercase tracking-widest">
+                <a href="index.html" class="hover:text-brand-teal">Home</a>
+                <a href="about.html" class="hover:text-brand-teal">About</a>
+                <a href="services.html" class="hover:text-brand-teal">Services</a>
+                <a href="pricing.html" class="hover:text-brand-teal">Pricing</a>
+            </div>
+        </div>
+    </nav>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 py-24 bg-white rounded-[3rem] shadow-sm">
+        <h1 class="text-5xl font-display font-bold text-brand-navy mb-8">Safeguarding & <span class="text-brand-teal italic">Wellbeing</span></h1>
+        <p class="text-xl text-brand-navy/70 mb-12">At Polaris Wellbeing Visits Ltd, we believe that the safety and wellbeing of every individual we support is paramount.</p>
+        <div class="prose prose-lg text-brand-navy/80 max-w-none">
+            <h3 class="text-2xl font-bold mb-4">Safer Recruitment</h3>
+            <p>All practitioners must undergo Enhanced DBS (Disclosure and Barring Service) checks before supporting clients. Our approach to safeguarding is proactive, maintaining a strong safeguarding-aware culture where the welfare of individuals remains at the heart of our practice.</p>
+        </div>
+    </div>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -3,57 +3,44 @@
  * Polaris Wellbeing functions and definitions
  */
 
-function polaris_wellbeing_setup() {
-    add_theme_support('title-tag');
-    add_theme_support('post-thumbnails');
-    
-    register_nav_menus(array(
-        'primary' => __('Primary Menu', 'polaris-wellbeing'),
+function polaris_setup() {
+    add_theme_support( 'title-tag' );
+    add_theme_support( 'post-thumbnails' );
+    register_nav_menus( array(
+        'primary' => __( 'Primary Menu', 'polaris' ),
     ));
 }
-add_action('after_setup_theme', 'polaris_wellbeing_setup');
+add_action( 'after_setup_theme', 'polaris_setup' );
 
-function polaris_wellbeing_scripts() {
-    // Tailwind CDN
-    wp_enqueue_script('tailwind-cdn', 'https://cdn.tailwindcss.com', array(), null, false);
+function polaris_scripts() {
+    // Tailwind CSS via CDN
+    wp_enqueue_style( 'tailwind', 'https://cdn.tailwindcss.com', array(), '3.4.1' );
     
-    // Lucide Icons CDN
-    wp_enqueue_script('lucide-icons', 'https://unpkg.com/lucide@latest', array(), null, true);
+    // Lucide Icons
+    wp_enqueue_script( 'lucide', 'https://unpkg.com/lucide@latest', array(), null, true );
+    wp_add_inline_script( 'lucide', 'lucide.createIcons();' );
     
-    // Tailwind Config
-    wp_add_inline_script('tailwind-cdn', "
+    // Custom logic to handle Tailwind configuration if needed
+    wp_add_inline_script( 'tailwind', "
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         brand: {
-                            navy: '#1a2a44',
-                            teal: '#2da0a0',
-                            gold: '#d4af37',
-                            cream: '#fdfcf8',
-                            slate: '#64748b'
+                            navy: '#1A2E35',
+                            teal: '#2D7F87',
+                            gold: '#C5A059',
+                            cream: '#F9F7F2',
+                            slate: '#4A5568',
                         }
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
-                        display: ['Outfit', 'sans-serif']
+                        display: ['Outfit', 'sans-serif'],
                     }
                 }
             }
         }
-    ");
+    " );
 }
-add_action('wp_enqueue_scripts', 'polaris_wellbeing_scripts');
-
-function polaris_wellbeing_footer_scripts() {
-    ?>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
-            }
-        });
-    </script>
-    <?php
-}
-add_action('wp_footer', 'polaris_wellbeing_footer_scripts');
+add_action( 'wp_enqueue_scripts', 'polaris_scripts' );
